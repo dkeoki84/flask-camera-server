@@ -27,6 +27,9 @@ RUN pip3 install --upgrade pip
 # Install app requirements
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+# expose ports
+EXPOSE 8080
+
 # Set entrypoint
 ENTRYPOINT [ "python3" ]
 
