@@ -4,7 +4,7 @@ from flask import (
     render_template,
     Response
 )
-from lib.camera import Camera
+from app.camera import Camera
 
 # init flask and camera
 app = Flask(__name__)
