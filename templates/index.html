@@ -1,9 +1,38 @@
-<html>
-  <head>
-    <title>Video Streaming Demonstration</title>
-  </head>
-  <body>
+{% extends 'base.html' %}
+{% block main %}
+<div class="d-flex flex-column">
+  <div class="d-flex justify-content-center">
     <h1>Video Streaming Demonstration</h1>
-    <img src="{{ url_for('video_feed') }}">
-  </body>
-</html>
+  </div>
+  <div class="d-flex justify-content-center">
+    <img id="video_feed" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+  </div>
+  <div class="d-flex justify-content-center">
+    <button type="button" id="play_stop_btn" class="btn btn-success mt-4">Toggle Play</button>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+$('#play_stop_btn').click(function(){
+  let btn = $('#play_stop_btn');
+  if( btn.hasClass("btn-success") ){
+    btn.removeClass("btn-success");
+    btn.addClass("btn-danger");
+    btn.text("Toggle Stop");
+    $('#video_feed').attr("src", "{{ url_for('video_feed') }}");
+  } else {
+    btn.removeClass("btn-danger");
+    btn.addClass("btn-success");
+    btn.text("Toggle Play");
+    $('#video_feed').attr("src", "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=");
+  }
+});
+{% endblock %}
+
+{% block style %}
+#video_feed {
+  width: 500px;
+  height: 500px;
+}
+{% endblock %}
