@@ -8,10 +8,13 @@ Stream camera feed to web browser from flask server
 [Source reference](https://stackoverflow.com/questions/44852484/access-webcam-using-opencv-python-in-docker)
 
 ### **Task 7 - Wrap up program inside a docker**
-To enable easy collaboration for development and not to polute local system with software installs, we first dockerize the app.
+```To enable easy collaboration for development and not to polute local system with software installs, we first dockerize the app.```
 
 ### **Task 1 - Capture Webcam Image data with OpenCV**
-Using the dockerized environment, implement a simple opencv camera capture app.
+```Using the dockerized environment, implement a simple opencv camera capture app.```
+
+### **Task 2 - Stream Image Data In Webcam Browser GUI using flask**
+```Install flask on docker and stream opencv camera image to web browser.```
 
 ### **Problems 1**
 #### Accessing host camera from inside docker
