@@ -28,10 +28,19 @@ As macOs steps was easier to reproduce uing [Xquartz](https://gist.github.com/so
 ```I believe if sufficient research and trial and error would fix this problem but, to complete the other (simple) tasks, I decide to emulate receiving camera frames from within the container and comeback to this problem after more research on the problem.```
 
 ## 2. Improve UI/UX
-* Task 3 - Improve  the UI/UX
+* Task 3 - Improve the UI/UX
 ### **Task 3 - Improve the UI/UX**
 Implement [bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for fast UI improvements.
 Add buttons for start/stop image streaming.
+
+## 3. Implement Camera Controls
+* Task 4 - Add Camera Parameters Adjustment
+* Task 5 - Add Image Operation Functionality
+### **Task 4 - Add Camera Parameters Adjustment**
+Implement function for camera param controls.
+
+### **Task 5 - Add Image Operation Functionality**
+Implement function for camera image controls.
 
 # running the app
 ## software requirements
