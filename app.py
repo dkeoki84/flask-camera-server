@@ -61,6 +61,13 @@ def brightness():
     get_cam().set_brightness(brightness)
     return "", 200
 
+# time render
+@app.route('/render', methods=["POST"])
+def render():
+    options = request.get_json()
+    get_cam().set_render(options)
+    return "", 200
+
 # main entry point
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
