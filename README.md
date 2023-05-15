@@ -1,5 +1,8 @@
 # flask-camera-server
 Stream camera feed to web browser from flask server
+<br>
+
+![alt text](templates/static/index.png)
 
 ## 1. Setup development environment
 * Task 7 - Wrap up program inside a docker
